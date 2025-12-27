@@ -1,6 +1,9 @@
 name: Build and Push code-server Image
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     - cron: "0 2 * * *"
   workflow_dispatch:
